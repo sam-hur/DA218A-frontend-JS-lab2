@@ -1,0 +1,60 @@
+*{
+    font-family: Montserrat, sans-serif;
+}
+
+html {
+    background-image: url(../assets/abstract-1646065775013-9153.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+form{
+    background-color: rgba(102, 102, 216, 0.8);
+    box-shadow: 8px 3px 12px grey;
+    position: absolute;
+    border: 8px solid rgba(128, 128, 128, 0.08);
+    border-radius: 7px;
+    padding: 35px;
+    min-width: 355px;
+    max-width: 355px;
+    left: 0;
+    top: 0;
+}
+
+
+@media (width > 720px){
+    form{
+        left: 40vw;
+        top: 40vh;
+    }
+}
+
+button{
+    margin-top: 35px;
+    width: 100px;
+    height: 35px;
+    font-size: 22px;    
+    font-weight: bold;
+}
+
+label{
+    font-weight: bold;
+}
+
+#textbox-name, #textbox-email{
+    font-weight: bold;
+}
+
+
+#textbox-name{
+    margin-left: 7.6px;
+
+}
+
+#textbox-email{
+    margin-left: 45.4px;
+}   
+
+#textarea-q2{
+    resize: none;
+}

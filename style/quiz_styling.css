@@ -1,0 +1,10 @@
+form{
+    top: 15vh;
+    /* transition: width 2s, height 4s, transform 2s;
+    transition-timing-function: ease; */
+}
+form p{
+    height: 20px;
+    margin-top: -45px;
+}
+
