@@ -3,6 +3,7 @@
 }
 
 html {
+    height: 100vh;
     background-image: url(../assets/abstract-1646065775013-9153.jpg);
     background-repeat: no-repeat;
     background-size: cover;   
