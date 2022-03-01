@@ -51,6 +51,7 @@ function grade() {
   if (q3_ans) { correct++; }
 
   let grade = (correct / questions) * 100;
-  pGrade.innerHTML = `Your grade is ${grade.toFixed(2)}%`;
+
+  pGrade.innerHTML = `Your grade is ${grade.toFixed(2)}%<br>Correct answers: Q1: 5  |  Q2: 37.5  |  Q3: 128, 8`;
   return;
 }
