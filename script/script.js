@@ -15,6 +15,7 @@ function login() {
   }
   if (err.length === 0) {
     window.location.href = "./quiz.html", true;
+    return;
   }
   alert(`Login unsuccessful due to invalid field input(s): ${err}`); // print err to screen using alert
 }
@@ -46,7 +47,8 @@ function grade() {
 
   if (document.getElementById("q1-opt3").checked) { correct++; }
   if (document.getElementById("textarea-q2").value == 37.5) { correct++; }
-  if (document.getElementById("cb-q3-2").checked && document.getElementById("cb-q3-3")) { correct++; }
+  q3_ans = !document.getElementById("cb-q3-1").checked && document.getElementById("cb-q3-2").checked && document.getElementById("cb-q3-3").checked;
+  if (q3_ans) { correct++; }
 
   let grade = (correct / questions) * 100;
   pGrade.innerHTML = `Your grade is ${grade.toFixed(2)}%`;
